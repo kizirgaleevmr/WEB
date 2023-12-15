@@ -12,8 +12,10 @@ input {
 .img_osi {
     width: 600px;
     height: 350px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     overflow: hidden;
+    box-shadow: gray 2px 3px 6px;
+    margin-bottom: 70px;
 }
 .osi {
     width: 100%;
