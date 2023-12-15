@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>My WEB</title>
   </head>
   <body>
@@ -11,20 +12,355 @@
       <header class="header">
         <h1>My WEB</h1>
       </header>
-
       <section>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nobis
-          beatae, praesentium aliquam quidem sint.
-        </p>
+        <div class="rap">
+          <details>
+            <summary><abbr title="Route Access Protocol">RAP</abbr></summary>
+            <p>
+              Route Access Protocol, RAP - это протокол, который использует порт
+              38 и используется для распространения информации о маршрутизации
+              на всех уровнях Интернета. RAP дополнительно определен в RFC 1476
+            </p>
+          </details>
+        </div>
       </section>
       <section>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quam
-          quasi eligendi magnam numquam provident porro rem nobis recusandae
-          voluptatibus?
-        </p>
+        <h2>Модель OSI</h2>
+        <div class="container">
+          <div class="img_osi">
+            <img class="osi" src="/slide-12.jpg" alt="Model OSI" />
+          </div>
+          <ol>
+            <li>
+              <span>Прикладной</span><br />
+
+              <details>
+                <summary>DHCP</summary>
+                <h4>Порт 67</h4>
+                <p>
+                  <strong
+                    ><abbr title="Dynamic Host Configuration Protocol"
+                      >DHCP</abbr
+                    ></strong
+                  >
+                  Dynamic Host Configuration Protocol — это сетевой протокол,
+                  позволяющий сетевым устройствам автоматически получать
+                  IP-адрес и другие параметры, необходимые для работы в сети
+                  TCP/IP.
+                </p>
+              </details>
+
+              <details>
+                <summary>DNS</summary>
+                <h4>Порт 53</h4>
+                <p>
+                  <strong>
+                    <abbr title="Domain Name System">DNS</abbr>
+                  </strong>
+                  Domain Name System - Компьютерная распределённая система для
+                  получения информации о доменах. Чаще всего используется для
+                  получения IP-адреса по имени хоста, получения информации о
+                  маршрутизации почты и/или обслуживающих узлах для протоколов в
+                  домене.
+                </p>
+              </details>
+
+              <details>
+                <summary>Telnet</summary>
+                <h4>Порт 23</h4>
+                <p>
+                  <strong>Telnet</strong>
+                  - Сетевой протокол для реализации текстового терминального
+                  интерфейса по сети (в современной форме — при помощи
+                  транспорта TCP).
+                </p>
+              </details>
+              <details>
+                <summary>SSH</summary>
+                <h4>Порт 22</h4>
+                <p>
+                  <strong><abbr title="(Secure Shell)">SSH </abbr></strong> —
+                  Secure Shell - это сетевой протокол прикладного уровня,
+                  позволяющий производить удалённое управление операционной
+                  системой и туннелирование TCP-соединений. Схож по
+                  функциональности с протоколами Telnet и rlogin, но, в отличие
+                  от них, шифрует весь трафик, включая и передаваемые пароли.
+                  SSH допускает выбор различных алгоритмов шифрования.
+                  SSH-клиенты и SSH-серверы доступны для большинства сетевых
+                  операционных систем. SSH позволяет безопасно передавать в
+                  незащищённой среде практически любой другой сетевой протокол
+                </p>
+              </details>
+              <details>
+                <summary>FTP</summary>
+                <h4>порт 21</h4>
+                <p>
+                  <strong>
+                    <abbr title="File Transfer Protocol">FTP</abbr>
+                  </strong>
+                  File Transfer Protocol — протокол передачи файлов по сети,
+                  появившийся в 1971 году задолго до HTTP и даже до TCP/IP,
+                  благодаря чему является одним из старейших прикладных
+                  протоколов.
+                </p>
+              </details>
+              <details>
+                <summary>HTTP</summary>
+                <h4>порт 80</h4>
+                <p>
+                  <strong>
+                    <abbr title="Hypertext Transfer Protocol">HTTP</abbr>
+                  </strong>
+                  Hypertext Transfer Protocol — сетевой протокол прикладного
+                  уровня, который изначально предназначался для получения с
+                  серверов гипертекстовых документов в формате HTML.
+                </p>
+              </details>
+              <details>
+                <summary>IMAP4</summary>
+                <h4>порт 143</h4>
+                <p>
+                  <strong>
+                    <abbr title="Internet Message Access Protocol">IMAP</abbr>
+                  </strong>
+                  Internet Message Access Protocol — протокол прикладного уровня
+                  для доступа к электронной почте. Базируется на транспортном
+                  протоколе TCP и использует порт 143, а IMAPS (IMAP поверх SSL)
+                  — порт 993
+                </p>
+              </details>
+              <details>
+                <summary>POP3</summary>
+                <h4>порт 110</h4>
+                <p>
+                  <strong><abbr title="">POP3</abbr></strong> — стандартный
+                  интернет-протокол прикладного уровня, используемый клиентами
+                  электронной почты для получения почты с удалённого сервера по
+                  TCP-соединению
+                </p>
+              </details>
+              <details>
+                <summary>SNMP</summary>
+                <h4>Порт 161</h4>
+                <p>
+                  <strong>
+                    <abbr title="Simple Network Management Protocol">SNMP</abbr>
+                  </strong>
+                  Simple Network Management Protocol — стандартный
+                  интернет-протокол для управления устройствами в IP-сетях. К
+                  поддерживающим SNMP устройствам относятся маршрутизаторы,
+                  коммутаторы, серверы, рабочие станции, принтеры, модемные
+                  стойки и другие.
+                </p>
+              </details>
+            </li>
+            <li>
+              <span>Представление</span><br />
+              <details>
+                <summary>WEP</summary>
+                <p>
+                  <strong
+                    ><abbr title="Wired Equivalent Privacy">WEP</abbr></strong
+                  >
+                  Wired Equivalent Privacy — алгоритм для обеспечения
+                  безопасности сетей Wi-Fi. Используется для обеспечения
+                  конфиденциальности и защиты передаваемых данных
+                  авторизированных пользователей беспроводной сети от
+                  прослушивания. Существует две разновидности WEP: WEP-40 и
+                  WEP-104, различающиеся только длиной ключа. В настоящее время
+                  данная технология является устаревшей, так как её взлом может
+                  быть осуществлен всего за несколько минут. Тем не менее, она
+                  продолжает широко использоваться. Для безопасности в сетях
+                  Wi-Fi рекомендуется использовать WPA
+                </p>
+              </details>
+              <details>
+                <summary>WPA</summary>
+                <p>
+                  <strong
+                    ><abbr title="Wi-Fi Protected Access">WPA</abbr></strong
+                  >
+                  Wi-Fi Protected Access - Это протокол безопасности
+                  беспроводной сети, созданный для замены WEP
+                </p>
+              </details>
+            </li>
+            <li>
+              <span>Сеансовый</span><br />
+              <details>
+                <summary>NetBIOS</summary>
+                <p>
+                  Протокол для работы в локальных сетях на персональных ЭВМ типа
+                  IBM/PC. Был разработан фирмой Sytek Corporation по заказу IBM
+                  в 1983 году. Он включает в себя интерфейс сеансового уровня, в
+                  качестве транспортных протоколов использует TCP и UDP. NetBIOS
+                  обеспечивает: — регистрацию и проверку сетевых имён; —
+                  установление и разрыв соединений; — связь с подтверждением
+                  доставки информации; — связь без подтверждения доставки
+                  информации; — поддержку управления и мониторинга драйвера и
+                  сетевой карты
+                </p>
+              </details>
+              <details>
+                <summary>SSL</summary>
+                <h4></h4>
+                <p>
+                  <strong><abbr title="Secure Sockets Layer">SSL</abbr></strong>
+                  Secure Sockets Layer - ( уровень защищённых сокетов) это
+                  криптографический протокол, который подразумевает более
+                  безопасную связь. Он использует асимметричную криптографию для
+                  аутентификации ключей обмена, симметричное шифрование для
+                  сохранения конфиденциальности и коды аутентификации сообщений
+                  для целостности сообщений. Протокол широко использовался для
+                  обмена мгновенными сообщениями и передачи голоса через IP
+                  (VoIP) в таких приложениях, как электронная почта,
+                  интернет-факс и др
+                </p>
+              </details>
+              <details>
+                <summary>TLS</summary>
+                <p>
+                  <strong>
+                    <abbr title="Transport Layer Security">TLS</abbr>
+                  </strong>
+                  Transport Layer Security — это протокол, который защищает
+                  данные во время их передачи по Сети. Он работает на четвёртом,
+                  транспортном, уровне сетевой модели OSI, где отвечает за
+                  создание безопасных сессий обмена данными между браузером и
+                  сервером.
+                </p>
+              </details>
+            </li>
+            <li>
+              <span>Транспортный</span><br />
+              <details>
+                <summary>TCP</summary>
+                <p>
+                  <strong>
+                    <abbr title="Transmission Control Protocol">TCP</abbr>
+                  </strong>
+                  Transmission Control Protocol — один из основных протоколов
+                  передачи данных интернета. Предназначен для управления
+                  передачей данных интернета. Пакеты в TCP называются
+                  сегментами. В стеке протоколов TCP/IP выполняет функции
+                  транспортного уровня модели OSI
+                </p>
+              </details>
+              <details>
+                <summary>UDP</summary>
+                <p>
+                  <strong
+                    ><abbr title="User Datagram Protocol">UDP</abbr></strong
+                  >
+                  User Datagram Protocol — один из немногих ключевых элементов
+                  набора сетевых протоколов для Интернета. С UDP компьютерные
+                  приложения могут посылать сообщения (в данном случае
+                  называемые датаграммами) другим хостам по IP-сети без
+                  необходимости предварительного сообщения для установки
+                  специальных каналов передачи или путей данных
+                </p>
+              </details>
+            </li>
+            <li>
+              <span>Сетевой</span><br />
+              <details>
+                <summary>IPv4</summary>
+                <p>
+                  <strong>
+                    <abbr
+                      title="Internet Protocol
+                    version 4"
+                      >IPv4</abbr
+                    >
+                  </strong>
+                  - Internet Protocol version 4 — четвёртая версия
+                  интернет-протокола (IP). Первая широко используемая версия.
+                  Протокол описан в RFC 791 (сентябрь 1981 года), заменившем RFC
+                  760 (январь 1980 года)
+                </p>
+              </details>
+              <details>
+                <summary>IPv6</summary>
+                <p>
+                  <strong>
+                    <abbr
+                      title="Internet Protocol
+                    version 6"
+                      >IPv6</abbr
+                    >
+                  </strong>
+                  - Новая версия интернет-протокола (IP), призванная решить
+                  проблемы, с которыми столкнулась предыдущая версия (IPv4) при
+                  использовании в Интернете. Протокол был разработан IETF. Длина
+                  адреса IPv6 составляет 128 бит, в отличие от адреса IPv4,
+                  длина которого равна 32 битам. На конец 2012 года доля IPv6 в
+                  сетевом трафике составляла около 5 %. К концу 2013 года
+                  ожидался рост на 3 %. Согласно статистике Google на январь
+                  2020 года, доля IPv6 в сетевом трафике составляла около 30
+                </p>
+              </details>
+              <details>
+                <summary>ICMP</summary>
+                <p>
+                  <strong
+                    ><abbr title="Internet Control Message Protocol"
+                      >ICMP</abbr
+                    ></strong
+                  >
+                  - Internet Control Message Protocol — это сетевой протокол,
+                  входящий в стек протоколов TCP/IP. В основном ICMP
+                  используется для передачи сообщений об ошибках и других
+                  исключительных ситуациях, возникших при передаче данных. Также
+                  на ICMP возлагаются некоторые сервисные функции (services)
+                </p>
+              </details>
+            </li>
+            <li>
+              <span>Канальный</span><br />
+              <details>
+                <summary>PPTP</summary>
+                <p>
+                  <strong
+                    ><abbr title="Point-to-Point Tunneling Protocol"
+                      >PPTP</abbr
+                    ></strong
+                  >
+                  — туннельный протокол типа точка-точка, позволяющий компьютеру
+                  устанавливать защищённое соединение с сервером за счёт
+                  создания специального туннеля в стандартной, незащищённой сети
+                </p>
+              </details>
+              <details>
+                <summary>L2TP</summary>
+                <p>
+                  <strong>
+                    <abbr title="Layer 2 Tunneling Protocol">L2TP</abbr>
+                  </strong>
+                  - Layer 2 Tunneling Protocol — в компьютерных сетях туннельный
+                  протокол, использующийся для поддержки виртуальных частных
+                  сетей. Главное достоинство L2TP состоит в том, что этот
+                  протокол позволяет создавать туннель не только в сетях IP, но
+                  и в таких, как ATM, X.25 и Frame Relay. Несмотря на то, что
+                  L2TP действует наподобие протокола канального уровня модели
+                  OSI, на самом деле он является протоколом сеансового уровня и
+                  использует зарегистрированный UDP-порт 1701
+                </p>
+              </details>
+              <details>
+                <summary>WiFi</summary>
+                <p>
+                  <strong><abbr title="Wireless Fidelity">WiFi</abbr></strong>
+                  Wi-Fi — технология беспроводной локальной сети с устройствами
+                  на основе стандартов IEEE 802.11. Логотип Wi-Fi является
+                  торговой маркой Wi-Fi Alliance.
+                </p>
+              </details>
+            </li>
+            <li><span>Физический</span><br /></li>
+          </ol>
+        </div>
       </section>
     </main>
+    <script src="/my.js"></script>
   </body>
 </html>
